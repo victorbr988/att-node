@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  backend:
+    image: node:16
+    ports:
+      - 3001:3001
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: bash
+    tty: true
+    
+      
